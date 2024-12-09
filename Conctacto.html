@@ -1,0 +1,142 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!--CSS-->
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* CONTACTO */
+    .header {
+        background-color: #508c3e;
+        padding: 85px;
+        text-align: center;
+        font-size: 85px;
+    }
+    
+    /* Contenedores de Cajas flexibles(flexboxes) */
+    .lider {
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    /* Creacion de 3 columnas iguales*/
+    .columna {
+        padding: 10px;
+        height: 300px;
+    }
+    
+    /*Columna de la izquierda y la derecha */
+    .columna.lados {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    
+    /*Columna del medio*/
+    .columna.medio {
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+    }
+    
+    /* Estilo del pie de pagina */
+    .footer {
+        background-color: #508c3e;
+        padding: 1px;
+        text-align: center;
+    }
+    
+    /* Hacer Responsive todas las columnas */
+    @media (max-width: 600px) {
+        .lider {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+        }
+    }
+    
+    </style>
+    
+    </head>
+    <body>
+     
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Oliver</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="Mapa.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="Sobre mi.html" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="Conctacto.html" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <div class="header">
+        <h2></h2>
+    </div>
+    
+    <div class="footer">
+    
+        <body>
+            <h2 class="txt1">NOMBRE:(829)-545-2829</h2>
+            <h2 class="txt1">INSTAGRAM:Oli@.</h2>
+            <h2 class="txt1">Estamos aqui</h2>
+        </body>
+       
+    <!--Mapa de Google Maps-->
+    
+    <center>
+    <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1642535.782514145!2d-71.7017968038322!3d18.748017516698333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8eaf88371eadcb43%3A0xe8c5bc0c47ea1721!2sDanilo%20Music%2C%20Av.%2030%20de%20Marzo%20121%2C%20Santo%20Domingo%2010217!3m2!1d18.478409!2d-69.898201!5e1!3m2!1ses!2sdo!4v1728501110965!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+     </center>
+    </div>
+     
+    <style>
+        body {
+            background-color: #08092e;
+        }
+    
+    </style>
+
+      <!-- Mapa -->   
+      <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="index.html">INICIO</a></li>
+                    <li><a href="Mapa.html">MAPA</a></li>
+                    <li><a href="Sobre mi.html">SOBRE MI</a></li>
+                    <li><a href="Conctacto.html">CONCTACTO</a></li>
+                </ul>
+            </div>
+            
+    </footer>
+   
+</body>
+</html>
